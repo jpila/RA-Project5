@@ -1,0 +1,49 @@
+
+footer{
+  width: 100%;
+  height: 45vh;
+  background: url('http://localhost:88/wordpress/wp-content/uploads/2017/06/dark-wood.png') center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  bottom: 0px;
+    img{
+      margin-right: 5%;
+    }
+}
+
+.text-containers{
+  color: white;
+  display: flex;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+h3{
+  color: #D48144;
+}
+
+.text-containers div {
+  padding-right: 100px;
+}
+
+.text-containers div *{
+  padding-bottom: 5px;
+}
+
+
+.copyright-container{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    p{
+      color: white;
+      line-height: normal;
+      margin: 0;
+      margin-top: -15px;
+    }
+}
+
+.text-containers i {
+  font-size: 1.2rem;
+}

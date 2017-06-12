@@ -1,0 +1,128 @@
+h1{
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+h2{
+  margin-top: 5%;
+  font-size: 2.4em;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4%;
+}
+
+
+.white-text{
+  color: white;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  }
+
+  .half-section{
+    width: 49%;
+    display: flex;
+  }
+
+  .half-section:nth-of-type(2){
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.adventures-container{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.small-adventures{
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50%;
+}
+.small-adventures:first-of-type{
+  width: 100%;
+  height: 48%;
+}
+
+.small-adventures:nth-of-type(2){
+  width: 48%;
+  height: 47%;
+  align-self: flex-end;
+}
+
+.small-adventures:nth-of-type(3){
+  width: 48%;
+  height: 47%;
+  align-self: flex-end;
+}
+
+.adventure-info{
+    position:relative;
+    width: 90%;
+    margin-left: 20px;
+    h3{
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 200;
+      line-height: 1.2;
+      }
+    }
+
+
+.adventure-large{
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.beach{
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), center no-repeat;
+  background-size: cover;
+  box-sizing: padding-box;
+}
+
+.mountain{
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../../assets/images/adventure-photos/mountain-hikers.jpg) center no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 48%;
+}
+
+.star-gazing{
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../assets/images/adventure-photos/night-sky.jpg) center no-repeat;
+  background-size: cover;
+  width: 48%
+}
+
+.button-container{
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.btn{
+  width: 150px;
+  height: 50px;
+  background-color: #20796F;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.adventure-detail-button{
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 100px;
+  padding: 10px;
+}

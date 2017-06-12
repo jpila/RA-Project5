@@ -1,0 +1,249 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+
+
+/* Menus */
+.secondary-navigation{
+margin-top: 15px;
+color: green;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 50px;
+position: relative;
+width: 100%;
+border-bottom: 1px solid grey;
+i{
+  margin-right: 100px;
+}
+a{
+  color: green;
+}
+ul {
+  list-style: none;
+  margin-right: 0;
+  padding-left: 0;
+
+  ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: $base__space-unit;
+    left: -999rem;
+    z-index: 99999;
+
+    ul {
+      left: -999rem;
+      top: 0;
+      padding: 15px 30px 15px 0px;
+    }
+
+    li {
+      &:hover > ul,
+      &.focus > ul {
+        left: 100%;
+      }
+    }
+
+    a {
+      width: 200px;
+    }
+
+    :hover > a,
+    .focus > a {
+    }
+
+    a:hover,
+    a.focus {
+    }
+  }
+
+  li:hover > ul,
+  li.focus > ul {
+    left: auto;
+  }
+}
+li {
+  padding: 0px 10px 0px 10px;;
+  float: left;
+  position: relative;
+
+  &:hover > a,
+  &.focus > a {
+  }
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.current_page_item > a,
+.current-menu-item > a,
+.current_page_ancestor > a {
+}
+}
+
+footer{
+
+}
+.navigation-container{
+  display:flex;
+}
+.logo{
+    background: url('http://localhost:88/wordpress/wp-content/uploads/2017/06/inhabitent-logo-tent-white.svg') center no-repeat;
+    background-size: contain;
+    width: 75px;
+    height: 75px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.logo2{
+  background: url('http://localhost:88/wordpress/wp-content/uploads/2017/06/inhabitent-logo-tent.svg') center no-repeat;
+  background-size: contain;
+  width: 75px;
+  height: 75px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  color: white;
+	height: 50px;
+	position: absolute;
+	width: 100%;
+  i{
+    margin-right: 100px;
+  }
+  img{
+    margin-left: 100px;
+  }
+  a{
+    color: white;
+  }
+	ul {
+		display: none;
+		list-style: none;
+		margin-right: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: $base__space-unit;
+			left: -999rem;
+			z-index: 99999;
+
+			ul {
+				left: -999rem;
+				top: 0;
+				padding: 10px;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		padding: 0px 10px 0px 10px;;
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+/* Links */
+
+a {
+	&:visited {
+		//color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 $base__space-unit;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

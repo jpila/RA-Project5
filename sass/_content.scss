@@ -1,0 +1,91 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	//margin: 0 0 0 0;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.entry-title{
+	letter-spacing: 5px;
+}
+
+.site-content{
+	margin: auto;
+		h1{
+			text-align: center;
+		}
+}
+
+.widget-area{
+	border-left: 1px solid grey;
+	padding-left: 4%;
+		*{
+			padding-top: 20px;
+		}
+}
+
+.page-content{
+	width: 65%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 5%;
+}
+
+.page-content *{
+	flex-basis: 100%;
+}
+
+.error-404{
+	display: flex;
+}
+.content-area{
+	width: 90%;
+	margin: auto;
+}
+
+fieldset{
+	border: none;
+}

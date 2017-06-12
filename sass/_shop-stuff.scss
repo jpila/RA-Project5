@@ -1,0 +1,30 @@
+.textcentered{
+  text-align: center;
+}
+.shop-stuff-box{
+  height: 40vh;
+}
+.stuff-container{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+
+  div{
+   width: 24%;
+   text-align: center;
+   border: 1px solid lightgrey;
+   border-top: 5px solid lightgrey;
+     img{
+       padding-top: 15px;
+       max-width: 50px;
+     }
+ }
+}
+
+.shopbtn{
+  border: none;
+  padding: 10px;
+  background-color: #20786F;
+  color: white;
+  margin-bottom: 40px;
+}
